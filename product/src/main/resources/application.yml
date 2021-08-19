@@ -1,7 +1,10 @@
 server:
   port: 8082
   servlet:
-    context-path: /stock
+    context-path: /product
+
+feign:
+  basePackages: con.wt.test.seata
 
 management:
   endpoints:
@@ -15,18 +18,19 @@ management:
 
 spring:
   application:
-    name: stock
+    name: product
   cloud:
     consul:
       port: 8500
       host: 127.0.0.1
       discovery:
-        service-name: stock
+        service-name: product
         instance-id: ${spring.application.name}:${spring.cloud.consul.host}:${server.port}:${random.value}
         health-check-path: /actuator/health
         health-check-interval: 10s
         prefer-ip-address: true
         heartbeat:
           enabled: true
+        register: true
 
 debug: true
