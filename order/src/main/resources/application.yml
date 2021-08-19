@@ -3,6 +3,14 @@ server:
   servlet:
     context-path: /order
 
+feign:
+  basePackages: com.wt.test.seata
+
+mybatis-plus:
+  basePackages: com.wt.test.seata.*.mapper
+  dbType: mysql
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+
 management:
   endpoints:
     enabled-by-default: true
@@ -31,14 +39,5 @@ spring:
         register: true
   main:
     allow-bean-definition-overriding: true
-
-feign:
-  basePackages: com.wt.test.seata
-
-mybatis-plus:
-  basePackages: com.wt.test.seata.*.mapper
-  dbType: mysql
-  mapper-locations: classpath:mapper/**/*Mapper.xml
-
 
 debug: true

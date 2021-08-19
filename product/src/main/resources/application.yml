@@ -6,6 +6,11 @@ server:
 feign:
   basePackages: con.wt.test.seata
 
+mybatis-plus:
+  basePackages: com.wt.test.seata.*.mapper
+  dbType: mysql
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+
 management:
   endpoints:
     enabled-by-default: true
@@ -32,5 +37,9 @@ spring:
         heartbeat:
           enabled: true
         register: true
+  main:
+    allow-bean-definition-overriding: true
+
+
 
 debug: true
