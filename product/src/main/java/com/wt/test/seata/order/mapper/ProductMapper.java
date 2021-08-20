@@ -1,8 +1,8 @@
-package com.wt.test.seata.product.mapper;
+package com.wt.test.seata.order.mapper;
 
 
 import com.wt.husky.mybatis.plus.mapper.BatchBaseMapper;
-import com.wt.test.seata.product.entity.ProductDO;
+import com.wt.test.seata.order.entity.ProductDO;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

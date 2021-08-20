@@ -1,0 +1,34 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /portal
+
+feign:
+  basePackages: com.wt.test.seata
+
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  application:
+    name: portal
+
+  cloud:
+    consul:
+      port: 8500
+      host: 127.0.0.1
+      discovery:
+        register: false
+
+  main:
+    allow-bean-definition-overriding: true
+
+debug: true

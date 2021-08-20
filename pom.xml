@@ -18,8 +18,9 @@
     </parent>
 
     <modules>
-        <module>product</module>
         <module>order</module>
+        <module>order-api</module>
+        <module>product</module>
         <module>product-api</module>
         <module>portal</module>
     </modules>

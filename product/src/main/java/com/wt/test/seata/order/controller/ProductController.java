@@ -1,13 +1,11 @@
-package com.wt.test.seata.product.controller;
+package com.wt.test.seata.order.controller;
 
 
-import com.wt.test.seata.product.api.ProductApi;
-import com.wt.test.seata.product.dto.StockUpdateDTO;
-import com.wt.test.seata.product.entity.ProductDO;
-import com.wt.test.seata.product.service.ProductService;
+import com.wt.test.seata.order.api.ProductApi;
+import com.wt.test.seata.order.dto.StockUpdateDTO;
+import com.wt.test.seata.order.entity.ProductDO;
+import com.wt.test.seata.order.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;

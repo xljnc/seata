@@ -1,4 +1,4 @@
-package com.wt.test.seata.product.dto;
+package com.wt.test.seata.order.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +16,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class StockUpdateDTO implements Serializable {
+public class OrderCreateDTO implements Serializable {
 
     @NotNull(message = "商品ID不能为空")
     private Long productId;
@@ -26,4 +26,10 @@ public class StockUpdateDTO implements Serializable {
      */
     @NotNull(message = "需要扣减的库存量不能为空")
     private Long amount;
+
+    /**
+     * 客户ID
+     */
+    @NotNull(message = "客户ID不能为空")
+    private Long customerId;
 }

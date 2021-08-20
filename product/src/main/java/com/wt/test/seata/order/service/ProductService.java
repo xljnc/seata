@@ -1,8 +1,8 @@
-package com.wt.test.seata.product.service;
+package com.wt.test.seata.order.service;
 
 
 import com.wt.husky.mybatis.plus.sevice.BaseService;
-import com.wt.test.seata.product.entity.ProductDO;
+import com.wt.test.seata.order.entity.ProductDO;
 
 /**
  * <p>

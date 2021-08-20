@@ -12,6 +12,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.EqualsAndHashCode;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * <p>
  * 订单表
@@ -45,4 +47,8 @@ public class OrderDO implements Serializable {
      */
     private Long productId;
 
+    /**
+     * 需要扣减的库存量
+     */
+    private Long amount;
 }

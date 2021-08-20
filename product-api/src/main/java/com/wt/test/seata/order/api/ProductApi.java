@@ -1,7 +1,6 @@
-package com.wt.test.seata.product.api;
+package com.wt.test.seata.order.api;
 
-import com.wt.test.seata.product.dto.StockUpdateDTO;
-import org.springframework.validation.annotation.Validated;
+import com.wt.test.seata.order.dto.StockUpdateDTO;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

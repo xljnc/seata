@@ -1,4 +1,4 @@
-package com.wt.test.seata.product.entity;
+package com.wt.test.seata.order.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

@@ -1,13 +1,13 @@
-package com.wt.test.seata.product.service.impl;
+package com.wt.test.seata.order.service.impl;
 
 
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.toolkit.SqlHelper;
 import com.wt.husky.mybatis.plus.sevice.impl.BaseServiceImpl;
-import com.wt.test.seata.product.entity.ProductDO;
-import com.wt.test.seata.product.mapper.ProductMapper;
-import com.wt.test.seata.product.service.ProductService;
+import com.wt.test.seata.order.entity.ProductDO;
+import com.wt.test.seata.order.mapper.ProductMapper;
+import com.wt.test.seata.order.service.ProductService;
 import org.springframework.stereotype.Service;
 
 /**
