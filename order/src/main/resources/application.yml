@@ -3,9 +3,6 @@ server:
   servlet:
     context-path: /order
 
-feign:
-  basePackages: com.wt.test.seata
-
 mybatis-plus:
   basePackages: com.wt.test.seata.*.mapper
   dbType: mysql

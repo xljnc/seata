@@ -11,7 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients
-@EnableDiscoveryClient
 public class PortalApplication {
 
     public static void main(String[] args) {

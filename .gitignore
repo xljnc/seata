@@ -28,3 +28,4 @@ target/
 .idea/
 /order/src/main/resources/rebel.xml
 /product/src/main/resources/rebel.xml
+/portal/src/main/resources/rebel.xml

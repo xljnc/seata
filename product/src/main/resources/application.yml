@@ -3,8 +3,6 @@ server:
   servlet:
     context-path: /product
 
-feign:
-  basePackages: con.wt.test.seata
 
 mybatis-plus:
   basePackages: com.wt.test.seata.*.mapper

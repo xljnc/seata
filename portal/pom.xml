@@ -36,12 +36,6 @@
         <dependency>
             <groupId>com.wt.husky</groupId>
             <artifactId>husky-starter-openfeign</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <dependency><!-- spring-cloud-consul服务治理的jar包 -->
