@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -17,10 +18,12 @@ import java.io.Serializable;
 @Builder
 public class StockUpdateDTO implements Serializable {
 
+    @NotNull(message = "商品ID不能为空")
     private Long productId;
 
     /**
      * 需要扣减的库存量
      */
+    @NotNull(message = "需要扣减的库存量不能为空")
     private Long amount;
 }

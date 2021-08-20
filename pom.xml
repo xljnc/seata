@@ -21,6 +21,7 @@
         <module>product</module>
         <module>order</module>
         <module>product-api</module>
+        <module>portal</module>
     </modules>
 
     <properties>

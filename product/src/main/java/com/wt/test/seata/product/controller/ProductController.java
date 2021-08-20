@@ -10,6 +10,8 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 /**
  * <p>
  * 商品表 前端控制器
@@ -19,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-08-20
  */
 @RestController
-@Validated
+@Valid
 public class ProductController implements ProductApi {
 
     @Autowired
@@ -27,7 +29,11 @@ public class ProductController implements ProductApi {
 
     @Override
     public Boolean updateStock(StockUpdateDTO updateDTO) {
-        return null;
+        ProductDO productDO = productService.getById(updateDTO.getProductId());
+        if (updateDTO.getAmount() > productDO.getStock())
+            return false;
+        productDO.setStock(productDO.getStock() - updateDTO.getAmount());
+        return productService.updateWithVersion(productDO);
     }
 }
 

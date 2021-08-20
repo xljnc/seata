@@ -13,5 +13,6 @@ import com.wt.test.seata.product.entity.ProductDO;
  * @since 2021-08-20
  */
 public interface ProductService extends BaseService<ProductDO> {
+    boolean updateWithVersion(ProductDO productDO);
 
 }

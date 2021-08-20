@@ -27,9 +27,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-bp1nnjhvq3tra324d.mysql.rds.aliyuncs.com/open_gateway?zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useAffectedRows=true
-    username: root
-    password: v7#ROHq7JmKD
+    url:
+    username:
+    password:
     hikari:
       pool-name: gmc-open-gateway
       minimum-idle: 10 #最小空闲连接数量
