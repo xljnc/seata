@@ -9,6 +9,7 @@ import com.wt.test.seata.order.entity.ProductDO;
 import com.wt.test.seata.order.mapper.ProductMapper;
 import com.wt.test.seata.order.service.ProductService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -22,6 +23,7 @@ import org.springframework.stereotype.Service;
 public class ProductServiceImpl extends BaseServiceImpl<ProductMapper, ProductDO> implements ProductService {
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public boolean updateWithVersion(ProductDO productDO) {
         LambdaUpdateWrapper<ProductDO> updateWrapper = Wrappers.lambdaUpdate();
         updateWrapper.eq(ProductDO::getId, productDO.getId());
