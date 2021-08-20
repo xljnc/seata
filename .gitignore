@@ -26,3 +26,5 @@ hs_err_pid*
 *.iml
 target/
 .idea/
+/order/src/main/resources/rebel.xml
+/product/src/main/resources/rebel.xml

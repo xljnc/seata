@@ -20,6 +20,7 @@
     <modules>
         <module>product</module>
         <module>order</module>
+        <module>product-api</module>
     </modules>
 
     <properties>
@@ -47,6 +48,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-consul-discovery</artifactId>
                 <version>3.0.3</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+                <scope>provided</scope>
             </dependency>
 
         </dependencies>
